@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Du lịch</title>
+</head>
+	<link rel="stylesheet" type="text/css" href="./css_menu.css">
+<body>
+	<div >
+    	<img class="banner-menu" src="img/dalat.png">
+    </div>
+
+    <ul>
+		  <li><a class="active1" href="#home" >TRANG CHỦ</a></li>
+		  <li><a href="#news">VĂN HÓA</a></li>
+		  <li><a href="#contact">ẨM THỰC</a></li>
+		  <li><a href="#about">KHUYẾN MÃI</a></li>
+	</ul>
+    
+    <script>
+		/*var myIndex = 0;
+		carousel();
+		
+		function carousel() {
+		  var i;
+		  var x = document.getElementsByClassName("my_imgSlides");
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		  }
+		  myIndex++;
+		  if (myIndex > x.length) {myIndex = 1}    
+		  x[myIndex-1].style.display = "block";  
+		  setTimeout(carousel, 3000); // Change image every 2 seconds
+		}
+		*/
+		function openCity(evt, cityName) {
+			  var i, x, tablinks;
+			  x = document.getElementsByClassName("city");
+			  for (i = 0; i < x.length; i++) {
+			    x[i].style.display = "none";
+			  }
+			  tablinks = document.getElementsByClassName("tablink");
+			  for (i = 0; i < x.length; i++) {
+			    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+			  }
+			  document.getElementById(cityName).style.display = "block";
+			  evt.currentTarget.className += " w3-red";
+		}
+	</script>
+</body>
+</html>
